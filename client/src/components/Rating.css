@@ -1,0 +1,12 @@
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #f8e825; /* A typical star color */
+}
+
+.rating-text {
+    margin-left: 5px;
+    color: var(--dark-grey);
+    font-size: 0.9em;
+}

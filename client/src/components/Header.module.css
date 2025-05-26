@@ -1,0 +1,64 @@
+/* client/src/components/Header.module.css */
+.header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navList {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navLink {
+    color: var(--white);
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.navLink:hover {
+    color: var(--secondary-color);
+}
+
+.logoutButton {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.logoutButton:hover {
+    background-color: #c4004a; /* Darker secondary */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+}

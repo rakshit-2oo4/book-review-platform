@@ -1,0 +1,98 @@
+.book-details-page {
+    padding: 2rem;
+}
+
+.book-details-content {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.book-main-info {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.book-cover {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-text-info {
+    flex: 1;
+    min-width: 300px; /* Ensure text info doesn't get too narrow */
+}
+
+.book-text-info h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.book-author {
+    font-size: 1.2rem;
+    color: var(--dark-grey);
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.book-rating {
+    margin-bottom: 1rem;
+}
+
+.book-genre,
+.book-year,
+.book-isbn {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.book-description {
+    margin-top: 1.5rem;
+    line-height: 1.8;
+    color: var(--dark-grey);
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin: 3rem 0;
+}
+
+.book-reviews-section h2,
+.book-reviews-section h3 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .book-main-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .book-text-info h1 {
+        font-size: 2rem;
+    }
+
+    .book-cover {
+        margin-bottom: 1.5rem;
+    }
+}

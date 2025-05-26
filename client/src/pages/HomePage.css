@@ -1,0 +1,33 @@
+.home-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: var(--dark-grey);
+    margin-bottom: 3rem;
+}
+
+.featured-books-heading {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.featured-books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .featured-books-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 1.5rem;
+    }
+}
